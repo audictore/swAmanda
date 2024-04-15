@@ -1,0 +1,147 @@
+/*Medidas base*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header .logo{
+    color: #000;
+}
+
+header ul li a{
+    color: #000;
+}
+
+header ul li div span{
+    background: #000;
+}
+
+main{
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+
+.container{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.textSection h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.textSection p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.textSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: #f2f2f2;
+
+}
+
+.formSection{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.frmContacto{
+    height: 100%;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border-color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: #fff;
+    background: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 35%;
+}
+
+.boton{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.selPais{
+    width: 100%;
+    border-radius: 30px;
+    padding: 5px;
+    border-width: 2px;
+    border-color: #000;
+    margin-bottom: 10px;
+}
+
+.telefono{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.selTip{
+    width: 100%;
+    border-radius: 30px;
+    padding: 5px;
+    border-color: #000;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+
+.selCode{
+    width: 20%;
+    border-radius: 30px;
+    padding: 5px;
+    border-color: #000;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+
+.textNumber{
+    width: 80%;
+    padding: 5px;
+}
+
+.textMensaje{
+    width: 100%;
+    height: 110px;
+    border-radius: 30px;
+    border-color: #000;
+    border-width: 2px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

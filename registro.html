@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/registro.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="http://localhost/pruebas/style/header.css">
+    <link rel="stylesheet" href="http://localhost/pruebas/style/registro.css">
+    <link rel="stylesheet" href="http://localhost/pruebas/style/footer.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <header>
+        <nav class="nav1">
+            <ul>
+                <li>
+                    <div class="bars_menu">
+                        <span class="line1_bars-menu"></span>
+                        <span class="line2_bars-menu"></span>
+                        <span class="line3_bars-menu"></span>
+                    </div>
+                    <a href="#">Buscar</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="logo" href="#">Amanda Gutiérrez</a>
+        <nav class="nav2">
+            <ul>
+                <li>
+                    <a href="#">Mi Cuenta</a>
+                    <a href="#">Mi bolsa</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#">Dama</a>
+            </li>
+            <li>
+                <a href="#">Caballero</a>
+            </li>
+            <li>
+                <a href="#">Infantil</a>
+            </li>
+            <li>
+                <a href="#">Sobre Pedido</a>
+            </li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
+    
+    <div class="titulo">
+        <h1>Registro</h1>
+    </div>
+    <div class="container">
+        <form class="frmRegistro">
+            <div class="flex-col">
+                <div class="columna">
+                    <div class="nomb">
+                        <label for="txtNombre">Nobre:</label>
+                        <input type="text" id="txtNombre" name="nombre" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="txtApellP">Primer Apellido:</label>
+                        <input type="text" id="txtApellP" name="apellidoPat" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="txtApellM">Segundo Apellido:</label>
+                        <input type="text" id="txtApellM" name="apellidoMat">
+                    </div>
+                    <div class="nomb">
+                        <label for="txtCorreo">Correo electrónico:</label>
+                        <input type="email" id="txtCorreo" name="correo" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="continentInput">Continente:</label>
+                        <!--<select id="selectConti" name="conti">
+                            <option value="opcion">Selecciona un continente</option>
+                        </select>-->
+                        <input type="text" id="continentInput" name="contiInp" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="countryInput">País:</label>
+                        <!--<select id="countrySelect" name="pais">                    <option value="opcion">Selecciona un país</option>
+                        </select>-->
+                        <input type="text" id="countryInput" name="countryInp" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="stateInput">Estado:</label>
+                        <!--<select id="stateSelect" name="estado">
+                            <option value="opcion">Selecciona un estado</option>
+                        </select>-->
+                        <input type="text" id="stateInput" name="stateInp" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="txtMunicipio">Municipio:</label>
+                        <input type="text" id="txtMunicipio" name="municipio" required>
+                    </div> 
+                </div>
+                <div class="columna">
+                    <div class="nomb">
+                        <label for="txtLocalidad">Localidad:</label>
+                        <input type="text" id="txtLocalidad" name="localidad" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="txtPostal">Código postal:</label>
+                        <input type="text" id="txtPostal" name="postal" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="txtColonia">Colonia:</label>
+                        <input type="text" id="txtColonia" name="colonia" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="txtCalle">Calle:</label>
+                        <input type="text" id="txtCalle" name="calle" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="txtExterior">Número exterior:</label>
+                        <input type="text" id="txtExterior" name="exterior" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="txtInterior">Número interior:</label>
+                        <input type="text" id="txtInterior" name="interior" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="pswContra">Contraseña:</label>
+                        <input type="password" id="pswContra" name="contra" required>
+                    </div>
+                    <div class="nomb">
+                        <label for="pswConfirmar">Confirmar contraseña:</label>
+                        <input type="password" id="pswConfirmar" name="confirContra" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="btnRegistro">Registrarse</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footerRow Frow1">
+            <div class="footerCol Fcol1">
+                <img src="img/logoFooter.png" alt="logoFooter">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Cumque reiciendis totam officia eaque consequuntur nemo! Dolor</p>
+            </div>
+            <div class="footerCol Fcol2">
+                <ul>
+                    <p>Productos</p>
+                    <li><a href="#">Dama</a></li>
+                    <li><a href="#">Caballero</a></li>
+                    <li><a href="#">Infantil</a></li>
+                </ul>
+                <ul>
+                    <p>Nosotros</p>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Conocenos</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+            </div>
+            <div class="footerCol Fcol3">
+                <ul class="socialNet">
+                    <p>Nuestras redes sociales:</p>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRow2">
+            <div>
+                <p>&copy; 2024</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--<script src="http://localhost/pruebas/js/select.js"></script>-->
+    <!--<script src="http://localhost/pruebas/js/selectPrueba.js"></script>-->
+    <script src="http://localhost/pruebas/js/autoComplete.js"></script>
+    <script src="http://localhost/pruebas/js/effects.js"></script>
+</body>
+</html>

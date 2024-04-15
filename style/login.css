@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header .logo{
+    color: #000;
+}
+
+header ul li a{
+    color: #000;
+}
+
+header ul li div span{
+    background: #000;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.frmLogin{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.frmTitle{
+    text-align: center;
+    margin-bottom:90px;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: medium;
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 2px;
+    font-size: medium;
+}
+
+button{
+    width: 100%;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    font-size: medium;
+    margin-top: 60px;
+}
+
+/*Medias queries para el header en pantallas pequeñas (smartphones)*/
+@media screen and (max-width: 430px) {
+
+    .container{
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+
+    .frmLogin{
+        width: 250px;
+    }
+
+    .frmTitle{
+        margin-bottom: 60px;
+    }
+
+    .row{
+        margin-bottom: 10px;
+    }
+
+    label{
+        font-size: small;
+    }
+
+    input{
+        padding: 2.5px;
+        font-size: small;
+    }
+
+    button{
+        margin-top: 30px;
+        padding: 2.5px;
+        font-size: small;
+    }
+}

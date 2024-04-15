@@ -1,0 +1,222 @@
+/*Medidas base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+header.down{
+    background: #fff;
+    padding: 15px 20px;
+}
+
+header.down .logo, header.down ul li a{
+    color: black;
+}
+
+header.down ul li div span{
+    background: black;
+}
+
+header .logo{
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 8%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+header ul li div span{
+    background: #fff;
+}
+
+.bars_menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.bars_menu span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 0.3s;
+}
+
+.activeline1_bars-menu{
+    transform: rotate(45deg) translate(-2px, 1px);
+    background: #000;
+}
+
+.activeline2_bars-menu{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeline3_bars-menu{
+    transform: rotate(-45deg) translate(-4px, 2px);
+    background: #000;
+}
+
+/*Estilos del slide menu*/
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: -450px;
+    width: 380px;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+
+.menu ul{
+    padding: 0;
+    list-style: none;
+    margin-top: 20%;
+}
+
+.menu li{
+    padding: 10px 0;
+}
+
+.menu a{
+    color: #000;
+    text-decoration: none;
+    padding: 5px 15px;
+    display: block;
+    transition: background-color 0.3;
+    line-height: 1.5;
+}
+
+.menu a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.menu.active{
+    left: 0;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.overlay.active{
+    display: block;  
+}
+
+.no-scroll{
+    overflow-y: hidden;
+}
+
+/*Medias queries para el header en pantallas medianas (tablets)*/
+@media screen and (min-width: 600px) and (max-width: 768px){
+    header{
+        padding: 20px 10px;
+    }
+    
+    header .logo{
+        font-size: 20px;
+    }
+
+    header ul li a{
+        margin: 0 10px;
+    }
+
+    .menu{
+        width: 300px;
+    }
+}
+
+/*Medias queries para el header en pantallas pequeñas (smartphones)*/
+@media screen and (max-width: 430px){
+    header{
+        padding: 15px 5px;
+    }
+  
+    header .logo{
+        font-size: 1rem;
+        margin-left: 0%;
+    }  
+
+    header ul li a{
+        font-size: .6rem;
+        margin: 0 8px;
+    }
+
+    .menu{
+        width: 210px;
+    }
+
+    .bars_menu{
+        width: 20px;
+        height: 20px;
+    }
+
+    .bars_menu span{
+        margin-top: 3px;
+    }
+
+    header.down{
+        background: #fff;
+        padding: 15px 5px;
+    }
+}

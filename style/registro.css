@@ -1,0 +1,159 @@
+/*Medidas base*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+}
+
+
+header .logo{
+    color: #000;
+}
+
+header ul li a{
+    color: #000;
+}
+
+header ul li div span{
+    background: #000;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    background-color: #fff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.frmRegistro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.flex-col{
+    display: flex;
+    width: 100%;
+    gap: 2%;
+}
+
+.columna{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.nomb{
+    width: 100%;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border-color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    padding: 5px;
+    background-color: #000000;
+    color: white;
+    border-style: solid;
+    border-radius: 30px;
+    margin-top: 2%;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+
+/*Medias queries para el header en pantallas medianas (tablets)*/
+@media screen and (max-width: 768px) {
+    .frmRegistro{
+        width: 450px;
+    }
+
+    label{
+        font-size: medium;
+    }
+
+    input{
+        font-size: medium;
+    }
+
+    button{
+        font-size: medium;
+    }
+} 
+
+/*Medias queries para el header en pantallas pequeñas (smartphones)*/
+@media screen and (max-width: 430px) {
+    .titulo{
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    .frmRegistro{
+        width: 60%;
+        margin-bottom: 15%;
+    }
+
+    .flex-col{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2%;
+    }
+
+    label{
+        font-size: small;
+    }
+
+    input{
+        font-size: small;
+        padding: 4px;
+    }
+
+    button{
+        margin-top: 10%;
+        font-size: small;
+    }
+}

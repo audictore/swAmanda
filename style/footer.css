@@ -1,0 +1,96 @@
+/*Medidas base*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    bottom: 0;
+}
+
+.Frow1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.footerCol{
+    display: flex;
+    align-items: center;
+    width: 33%;
+    text-align: left;
+    list-style: none;
+}
+
+.Fcol1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.Fcol1 img{
+    width: 100px;
+    height: 100px;
+}
+
+.Fcol1 p{
+    text-align: justify;
+}
+
+.footerCol ul{
+    list-style: none;
+}
+
+.footerCol li{
+    padding: 5px 0;
+}
+
+.footerCol ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.Fcol2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Fcol2 p{
+    margin-bottom: 10px;
+}
+
+.Fcol2 ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.Fcol3 p{
+    margin-bottom: 10px;
+}
+
+.footerRow2{
+    margin-top: 20px;
+}
+
+/*Medias queries para el header en pantallas medianas (tablets)*/
+
+/*Medias queries para el header en pantallas pequeñas (smartphones)*/
+@media screen {
+    footer{
+        font-size: small;
+    }
+}

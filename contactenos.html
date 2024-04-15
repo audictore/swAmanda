@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/contacto.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <div class="bars_menu">
+                        <span class="line1_bars-menu"></span>
+                        <span class="line2_bars-menu"></span>
+                        <span class="line3_bars-menu"></span>
+                    </div>
+                    <a class="links" href="#">Buscar</a>
+                </li>
+            </ul>
+        </nav>
+        <a class="logo" href="#">Amanda Gutiérrez</a>
+        <nav>
+            <ul>
+                <li>
+                    <a class="links" href="#">Mi Cuenta</a>
+                    <a class="links" href="#">Mi bolsa</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#">Dama</a>
+            </li>
+            <li>
+                <a href="#">Caballero</a>
+            </li>
+            <li>
+                <a href="#">Infantil</a>
+            </li>
+            <li>
+                <a href="#">Sobre Pedido</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="overlay"></div>
+
+    <main class="container">
+        <div class="textSection">
+            <h1>Contáctenos</h1>
+            <p>Estaremos felices de ayudarte. No dude en comunicarse a través de los detalles a continuación.</p>
+        </div>
+        <div class="formSection">
+            <form class="frmContacto">
+                <div>
+                    <label for="txtNombre">Nombre</label>
+                    <input type="text" id="txtNombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="txtApellidos">Apellido(s)</label>
+                    <input type="text" id="txtApellidos" name="apellidos" required>
+                </div>
+                <div>
+                    <label for="txtCorreo">Correo electrónico</label>
+                    <input type="email" id="txtCorreo" name="correo" required>
+                </div>
+                <div>
+                    <label for="sltPais">País</label>
+                    <select name="pais" id="sltPais" class="selPais" required></select>
+                    <!--<input type="text" id="txtPais" name="pais" required>-->
+                </div>
+                <div class="telefono">
+                    <label for="txtNumero">Número de teléfono</label>
+                    <select name="tipo" id="sltTipo" class="selTip" required></select>
+                    <select name="codigo" id="sltCode" class="selCode" required></select>
+                    <!--<input type="text" id="txtTipo" name="tipo" required>
+                    <input type="text" id="txtExtend" name="extencion" required>-->
+                    <input type="tel" id="txtNumero" name="numero" class="textNumber" required>
+                </div>
+                <div>
+                    <label for="txtAsunto">Asunto de su mensaje</label>
+                    <input type="text" id="txtAsunto" name="asunto" required>
+                    <!--<input type="text" id="txtMensaje" name="mensaje" required>-->
+                    <textarea name="mensaje" id="txtMensaje" cols="30" rows="10" class="textMensaje"></textarea>
+                </div>
+                <div class="boton">
+                    <button type="submit" id="btnEnviar">Envie su mensaje</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerRow Frow1">
+            <div class="footerCol Fcol1">
+                <img src="img/logoFooter.png" alt="logoFooter">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Cumque reiciendis totam officia eaque consequuntur nemo! Dolor</p>
+            </div>
+            <div class="footerCol Fcol2">
+                <ul>
+                    <p>Productos</p>
+                    <li><a href="#">Dama</a></li>
+                    <li><a href="#">Caballero</a></li>
+                    <li><a href="#">Infantil</a></li>
+                </ul>
+                <ul>
+                    <p>Nosotros</p>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Conocenos</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                </ul>
+            </div>
+            <div class="footerCol Fcol3">
+                <ul class="socialNet">
+                    <p>Nuestras redes sociales:</p>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRow2">
+            <div>
+                <p>&copy; 2024</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://localhost/pruebas/js/effects.js"></script>
+</body>
+</html>
